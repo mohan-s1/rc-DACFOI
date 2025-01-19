@@ -118,3 +118,9 @@ class SEASScraper(BaseScraper):
         except Exception as e:
             logger.error(f"Unexpected error processing page {profile_url}: {e}")
             raise
+
+scraper = SEASScraper(HttpClient())
+
+profile_urls = scraper.get_profile_endpoints_from_people(people_url='https://engineering.virginia.edu/department/chemical-engineering/people?keyword=&position=2&impact_area=All&research_area=All')
+
+print(profile_urls)
