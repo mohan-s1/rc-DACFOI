@@ -121,11 +121,6 @@ class SEASScraper(BaseScraper):
 
 scraper = SEASScraper(HttpClient())
 
-base = "https://engineering.virginia.edu/department/chemical-engineering/people?keyword=&position=2&impact_area=All&research_area=All"
+base_url = "https://engineering.virginia.edu/faculty/camille-bilodeau"
 
-profile_urls = scraper.get_profile_endpoints_from_people(people_url=base)
-
-
-name = scraper.get_name_from_profile(base+profile_urls[0])
-print(name)
-print(type(name))
+print(scraper.get_emails_from_profile(base_url))
