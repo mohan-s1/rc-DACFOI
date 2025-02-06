@@ -123,4 +123,5 @@ scraper = SEASScraper(HttpClient())
 
 base_url = "https://engineering.virginia.edu/faculty/camille-bilodeau"
 
-print(scraper.get_emails_from_profile(base_url))
+print(scraper.get_about_from_profile(base_url))
+print(scraper.get_research_interests_from_profile(base_url))

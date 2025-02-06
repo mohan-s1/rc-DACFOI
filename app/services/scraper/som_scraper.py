@@ -161,53 +161,19 @@ profile_urls = scraper.get_profile_endpoints_from_people(people_url=base_url)
 
 name = scraper.get_name_from_profile(base_url + profile_urls[1])
 
-# SOM =   {
-#         "departments": {
-#             "Cell Biology": {
-#                 "people_url": "https://med.virginia.edu/cell-biology/department-faculty/",
-#             },
-#             "Biochemistry and Molecular Genetics": {
-#                 "people_url": "https://med.virginia.edu/bmg/faculty/",
-#             },
-#             "Microbiology, Immunology, Cancer Biology": {
-#                 "people_url": "https://med.virginia.edu/mic/faculty/primary-faculty/",
-#             },
-#             "Neuroscience": {
-#                 "people_url": "https://med.virginia.edu/neuroscience/faculty/primary-faculty/",
-#             },
-#             "Molecular Physiology and Biological Physics": {
-#                 "people_url": "https://med.virginia.edu/physiology-biophysics/faculty/",
-#             },
-#             "Pharmacology": {
-#                 "people_url": "https://med.virginia.edu/pharm/primary-faculty/",
-#             },
-#         },
-#     }
-
-# SOM =   {
-#         "departments": {
-#             "Cell Biology": {
-#                 "people_url": "https://med.virginia.edu/cell-biology/department-faculty/",
-#             },
-#             "Biochemistry and Molecular Genetics": {
-#                 "people_url": "https://med.virginia.edu/bmg/faculty/",
-#             },
-#             "Microbiology, Immunology, Cancer Biology": {
-#                 "people_url": "https://med.virginia.edu/mic/faculty/primary-faculty/",
-#             },
-#             "Molecular Physiology and Biological Physics": {
-#                 "people_url": "https://med.virginia.edu/physiology-biophysics/faculty/",
-#             },
-#             "Pharmacology": {
-#                 "people_url": "https://med.virginia.edu/pharm/primary-faculty/",
-#             },
-#         },
-#     }
-
 SOM =   {
         "departments": {
             "Cell Biology": {
                 "people_url": "https://med.virginia.edu/cell-biology/department-faculty/",
+            },
+            "Biochemistry and Molecular Genetics": {
+                "people_url": "https://med.virginia.edu/bmg/faculty/",
+            },
+            "Microbiology, Immunology, Cancer Biology": {
+                "people_url": "https://med.virginia.edu/mic/faculty/primary-faculty/",
+            },
+            "Molecular Physiology and Biological Physics": {
+                "people_url": "https://med.virginia.edu/physiology-biophysics/faculty/",
             },
             "Pharmacology": {
                 "people_url": "https://med.virginia.edu/pharm/primary-faculty/",
