@@ -34,4 +34,17 @@ finally:
     logger.info("Deleting virtual environment...")
     logger.info("An error occurred during runtime, please rerun the setup script.")
 
+env_file_path = os.path.join(working_dir, "rc-DACFOI.env")
+
+openai_api_key = input("Enter your OpenAI API key: ").strip()
+
+env_contents = f'''OPENAI_API_KEY="{openai_api_key}"
+DATABASE_URL="sqlite:///database.db"
+'''
+
+with open(env_file_path, "w") as f:
+    f.write(env_contents)
+
+logger.info(f".env file created at: {env_file_path}")
+
 logger.info("Applications setup complete. Run /backend/app.py to launch the development server.")
