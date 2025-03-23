@@ -28,8 +28,7 @@ The system generates vector embeddings for each faculty profile using OpenAI’s
 ## Set Up
 To launch a local instance of the web application, in a local directory run the following commands:
 
-NOTE: 
-- Required version of Python to run `setup.py` is 3.12.x)
+NOTE: You must use Python 3.12.x to run `setup.py` in step 3
 
 1. `git clone https://github.com/galitz-matt/rc-DACFOI.git`
 2. `cd rc-DACFOI`
